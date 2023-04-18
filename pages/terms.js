@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './../styles/Terms.module.css';
+import Link from "next/link";
 
 const Terms = () => {
   return (
@@ -14,7 +15,7 @@ const Terms = () => {
       <p className={styles.description}>
         利用者は、本ウェブサイトに掲載されている情報やサービスを利用することにより、本利用規約に同意したものとみなされます。当組織は、利用規約を予告なく変更する権利を留保します。変更後の利用規約は、本ウェブサイト上に掲載された時点で効力を生じます。
       </p>
-      <a className={styles.link} href="/about-us">世界平和を憂う秘密結社に戻る</a>
+      <Link className={styles.link} href="/about-us">Fake Guardian V2</Link>
     </div>
   );
 };

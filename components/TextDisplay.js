@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 import styles from '@/components/styles/TextDisplay.module.css'
 
 export function TextDisplay(props) {
@@ -14,7 +15,7 @@ export function TextDisplay(props) {
               {props.text.map((row, rowIndex) => (
                   <div key={rowIndex} className={styles.twitter__block}>
                     <figure>
-                      <img src={row.icon+".png"} width="20"/>
+                      <Image src={row.icon+".png"} width="20"/>
                     </figure>
                     <div className={styles.twitter__blocktext}>
                       <div className={styles.name}>{row.username}<span className={styles.name_reply}>{row.userid}</span></div>
@@ -27,10 +28,10 @@ export function TextDisplay(props) {
                         </div>
                         */}
                       </div>
-                      <div class={styles.twitter__icon}>
-                        <span class={styles.twitterbubble}>{row.favo}</span>
-                        <span class={styles.twitterloop}>{row.retweet}</span>
-                        <span class={styles.twitterheart}>{row.like}</span>
+                      <div className={styles.twitter__icon}>
+                        <span className={styles.twitterbubble}>{row.favo}</span>
+                        <span className={styles.twitterloop}>{row.retweet}</span>
+                        <span className={styles.twitterheart}>{row.like}</span>
                       </div>
                     </div>
                   </div>

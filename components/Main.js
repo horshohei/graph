@@ -6,6 +6,9 @@ import GraphComponent from "@/components/NetworkRender";
 import data from '@/components/TimeSeriesData';
 import styles from '@/components/styles/Main.module.css';
 import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
+import loadable from '@loadable/component'
+
+
 
 
 
