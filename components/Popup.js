@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/Popup.module.css';
+import styles from '@/components/styles/Popup.module.css';
 
 const Popup = ({ children, onClose }) => {
   return (

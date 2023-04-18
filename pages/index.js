@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Main} from '@/components/Main.js'
-import styles from './../styles/Home.module.css';
+import styles from '@/styles/Home.module.css';
 import Header from "@/components/Header";
-
 
 function App() {
 
   return (
     <div className={styles.main}>
-      <Header />
-      <Main />
+        <Header />
+        <Main />
     </div>
   );
 }

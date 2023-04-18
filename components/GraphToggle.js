@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/GraphToggle.module.css'
+import styles from '@/components/styles/GraphToggle.module.css'
 
 export function GraphToggle(props) {
   return (

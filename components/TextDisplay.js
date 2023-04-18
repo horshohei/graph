@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/TextDisplay.module.css'
+import styles from '@/components/styles/TextDisplay.module.css'
 
 export function TextDisplay(props) {
   return (

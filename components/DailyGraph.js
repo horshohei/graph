@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./styles/DailyGraph.module.css"
+import styles from "@/components/styles/DailyGraph.module.css"
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 export function DailyGraph(props) {

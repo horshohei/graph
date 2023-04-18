@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import Popup from '../components/Popup';
-import NetworkGraph from '../components/NetworkGraph';
+import Popup from '@/components/Popup';
+
 import styles from '@/components/styles/NetworkRender.module.css'
+import loadable from '@loadable/component'
+
+const NetworkGraph = loadable( () => import('@/components/NetworkGraph'))
 
 const data = {
   nodes: [
