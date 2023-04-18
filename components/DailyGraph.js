@@ -4,7 +4,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'r
 export function DailyGraph(props) {
 
   return (
-    <AreaChart width={600} height={400} data={props.data}>
+    <AreaChart width={900} height={400} data={props.data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
