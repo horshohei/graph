@@ -1,10 +1,12 @@
 import React from 'react';
+import styles from "./styles/DailyGraph.module.css"
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 export function DailyGraph(props) {
 
   return (
-    <AreaChart width={900} height={400} data={props.data}>
+  <div className={styles.graphcanvas}>
+    <AreaChart width={1200} height={500} data={props.data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
@@ -14,6 +16,7 @@ export function DailyGraph(props) {
         <Area key={col} type="monotone" dataKey={col} stackId="1" stroke={props.colors[index]} fill={props.colors[index]} onClick={(event) =>props.onClick(event, col)} />
       ))}
     </AreaChart>
+  </div>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './TextDisplay.module.css'
+import styles from './styles/TextDisplay.module.css'
 
 export function TextDisplay(props) {
   return (
@@ -14,13 +14,13 @@ export function TextDisplay(props) {
               {props.text.map((row, rowIndex) => (
                   <div key={rowIndex} className={styles.twitter__block}>
                     <figure>
-                      <img src="Anger.png" width="20"/>
+                      <img src={row.icon+".png"} width="20"/>
                     </figure>
                     <div className={styles.twitter__blocktext}>
-                      <div className={styles.name}>うさきち<span className={styles.name_reply}>@usa_tan</span></div>
-                      <div className={styles.date}>1時間前</div>
+                      <div className={styles.name}>{row.username}<span className={styles.name_reply}>{row.userid}</span></div>
+                      <div className={styles.date}>{row.date}時間前</div>
                       <div className={styles.text}>
-                          {row}
+                          {row.text}
                       {/*
                         <div className={styles.inpict}>
                           <img src="sample.jpg" />
@@ -28,9 +28,9 @@ export function TextDisplay(props) {
                         */}
                       </div>
                       <div class={styles.twitter__icon}>
-                        <span class={styles.twitterbubble}>1</span>
-                        <span class={styles.twitterloop}>4</span>
-                        <span class={styles.twitterheart}>122</span>
+                        <span class={styles.twitterbubble}>{row.favo}</span>
+                        <span class={styles.twitterloop}>{row.retweet}</span>
+                        <span class={styles.twitterheart}>{row.like}</span>
                       </div>
                     </div>
                   </div>

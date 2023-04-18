@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './styles/GraphToggle.module.css'
 
 export function GraphToggle(props) {
   return (
-    <div>
-      <button onClick={() => props.onToggle('daily')}>Daily</button>
-      <button onClick={() => props.onToggle('monthly')}>Monthly</button>
+    <div className={styles.btnspace}>
+      <button className={styles.btn} onClick={() => props.onToggle('daily')}>Daily</button>
+      <button className={styles.btn} onClick={() => props.onToggle('monthly')}>Monthly</button>
     </div>
   );
 }

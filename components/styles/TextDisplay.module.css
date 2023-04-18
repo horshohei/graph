@@ -2,7 +2,7 @@
   padding: 0;
   background: #ffffff;
   overflow: hidden;
-  max-width: 400px;
+  max-width: 80%;
   margin: 20px auto;
   font-size: 80%;
   border: solid 1px #eeeeee;
@@ -59,11 +59,11 @@
 }
 /* アイコン画像 */
 .twitter__container .twitter__block figure {
-  width: 50px;
+  width: 30px;
   padding: 0;
   margin: 0;
   float: left;
-  width: 50px;
+  width: 30px;
 }
   /* 正方形を用意 */
 .twitter__container .twitter__block figure img {
@@ -98,6 +98,7 @@
 /* 本文 */
 .twitter__container .twitter__blocktext .text {
   margin: 5px 0;
+  font-size: 18px;
 }
 /* 画像を貼る場合 */
 .twitter__container .twitter__blocktext .text .in-pict img {
